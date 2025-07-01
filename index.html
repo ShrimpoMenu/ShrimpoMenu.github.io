@@ -40,12 +40,15 @@
     .price {
       color: #f6e607;
       font-weight: bold;
-      float: right;
+      display: block;
+      margin-top: 5px;
+      float: none;
     }
     .section {
       max-width: 600px;
       margin: 0 auto;
       text-align: left;
+      padding: 0 10px;
     }
     .spicy {
       margin-top: 40px;
@@ -64,9 +67,9 @@
       height: auto;
     }
     .point{
-      height: 50px;
+      height: 40px;
       width: auto;
-      margin-right: 10px;
+      margin:0 auto 10px;
       vertical-align: middle;
     }
     .my-flex-container {
@@ -78,9 +81,10 @@
       color: #FF7F7F;
       text-align: center;
       font-weight: bold;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
       font-family:  Verdana, Geneva, sans-serif;
-      font-size: xx-large;
+      font-size: 1.2em;
+       
 
       text-shadow: 
       0 0 3px rgba(255, 127, 127, 0.6),   
@@ -95,6 +99,8 @@
       justify-content: center;
       margin-top: 30px;
       margin-bottom: 0;
+      text-align: center;
+      flex-direction: column
      }
      .sectionp{
       margin-top: 0;
@@ -103,6 +109,11 @@
       font-size: small;
       text-align: right;
      }
+     @media (max-width: 768px) {
+      body {
+        font-size: 1.1em;
+        padding: 10px;
+      }
   </style>
 </head>
 <body>
