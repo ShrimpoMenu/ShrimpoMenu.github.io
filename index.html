@@ -23,6 +23,7 @@
       font-family: Arial, Helvetica, sans-serif;
     }
     h2 {
+
       color:#f3a0b3;
       padding: 10px;
       border-radius: 10px;
@@ -32,31 +33,14 @@
     .item {
       margin: 20px 0;
       font-size:100%;
-      display: flex;
-      flex-direction: column;
     }
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    .item-title {
-      flex-grow: 1;
-      text-align: left;
-      font-weight: bold;
+    .description{
+      font-size: medium;
     }
     .price {
       color: #f6e607;
       font-weight: bold;
-      margin-left: 15px;
-      white-space: nowrap;
-    }
-    .description{
-      font-size: medium;
-      text-align: left;
-      margin-top: 5px;
-      padding-right: 10px;
+      float: right;
     }
     .section {
       max-width: 600px;
@@ -86,53 +70,44 @@
       vertical-align: middle;
     }
     .my-flex-container {
-      display: flex;
-      flex-direction: column; 
-      align-items: center;   
-    }
-    .neon-text{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+     }
+     .neon-text{
       color: #FF7F7F;
       text-align: center;
       font-weight: bold;
       letter-spacing: 5px;
       font-family:  Verdana, Geneva, sans-serif;
       font-size: xx-large;
+
       text-shadow: 
-        0 0 3px rgba(255, 127, 127, 0.6),   
-        0 0 5px rgba(255, 127, 127, 0.5),  
-        0 0 10px rgba(255, 127, 127, 0.4),  
-        0 0 20px rgba(255, 127, 127, 0.3),  
-        0 0 40px rgba(255, 127, 127, 0.2);  
-    }
-    .signature-heading-group{
+      0 0 3px rgba(255, 127, 127, 0.6),   
+      0 0 5px rgba(255, 127, 127, 0.5),  
+      0 0 10px rgba(255, 127, 127, 0.4),  
+      0 0 20px rgba(255, 127, 127, 0.3),  
+      0 0 40px rgba(255, 127, 127, 0.2);  
+     }
+     .signature-heading-group{
       display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 30px;
       margin-bottom: 0;
-    }
-    .sectionp{
+     }
+     .sectionp{
       margin-top: 0;
       padding-top: 0;
       border:0;
       font-size: small;
       text-align: right;
-    }
-    @media (max-width: 768px) {
+     }
+     @media (max-width: 768px) {
       body {
         font-size: 100%;
         padding: 0.95em;
       }
-      .item-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .price {
-        margin-left: 0;
-        margin-top: 5px;
-        align-self: flex-end;
-      }
-    }
   </style>
 </head>
 <body>
@@ -149,17 +124,11 @@
     </div>
     <p class="sectionp" style="font-size: 20px;">* Swap 2 Shrimps for Fries.</p>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Dynamite Cup (8pcs)</div>
-        <div class="price">11$</div>
-      </div>
+      <strong>Dynamite Cup (8pcs)<span class="price">11$</span></strong>
       <p class="description">Dynamite Shrimps with a soft drink in Shrimpo's Special Cup.</p>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Bang Bang Cup (8pcs)🌶️</div>
-        <div class="price">11$</div>
-      </div>
+      <strong>Bang Bang Cup (8pcs)🌶️<span class="price">11$</span></strong>
       <p class="description">Fried Shrimps Coated with Bang Bang Sauce, and a soft drink in Shrimpo's Special Cup.</p>
     </div>
     
@@ -172,55 +141,34 @@
     <p class="sectionp">*Includes fries, a soft drink, and one sauce.</p>
     
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Boom Boom Balls</div>
-        <div class="price">8$</div>
-      </div>
-      <p class="description">Shrimps, crab, Cream Cheese, Mixed Cheese.</p>
-    </div>
+      <strong>Boom Boom Balls<span class="price">8$</span></strong><br>
+     <p class="description">Shrimps, crab, Cream Cheese, Mixed Cheese.</p>
  
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Golden Crunchies</div>
-        <div class="price">10$</div>
-      </div>
+      <strong>Golden Crunchies<span class="price">10$</span></strong><br>
       <p class="description">Crispy Shrimps coated with panko.</p>
     </div>
 
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Island Coco Crunch</div>
-        <div class="price">12$</div>
-      </div>
+      <strong>Island Coco Crunch<span class="price">12$</span></strong><br>
       <p class="description">Crispy Shrimps coated with coconut and panko.</p>
     </div>
-    
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Shrimpo Combo</div>
-        <div class="price">16$</div>
-      </div>
-      <p class="description">4 Boom Boom Balls, 4 Island Coco Crunch, 4 Golden Crunchies, Fries, Coleslow, 2 Sauces, 2 Soft Drink.</p>
+     <strong>Shrimpo Combo<span class="price">16$</span></strong><br>
+     <p class="description">4 Boom Boom Balls, 4 Island Coco Crunch, 4 Golden Crunchies, Fries, Coleslow, 2 Sauces, 2 Soft Drink.</p>
     </div>
-    
     <div class="signature-heading-group">
       <img src="shrimptaco_icon.png" class="point" style="width: auto;height: 60px;">
        <h2>TACO DUO</h2>
     </div>
    
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Fajita Flame Taco (2pcs)</div>
-        <div class="price">11$</div>
-      </div>
-      <p class="description">Grilled shrimps,Bell peppers, Mixed Cheese, Pico de Gallo, Avocado, Sriracha and Jalapenos.</p>
+      <strong>Fajita Flame Taco (2pcs)<span class="price">11$</span></strong><br>
+     <p class="description">Grilled shrimps,Bell peppers, Mixed Cheese, Pico de Gallo, Avocado, Sriracha and Jalapenos.</p>
     </div>
 
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Tropical Tango Taco (2pcs)</div>
-        <div class="price">14$</div>
-      </div>
+      <strong>Tropical Tango Taco (2pcs)<span class="price">14$</span></strong><br>
       <p class="description">Grilled shrimps, Mango, Pico de Gallo, Mayonnaise, and Sriracha.</p>
     </div>
     
@@ -231,56 +179,37 @@
     <p class="sectionp">*Bread Options: White or Brown.</p>
 
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Shrimp Po' Boys Sandwich</div>
-        <div class="price">10$</div>
-      </div>
+      <strong>Shrimp Po' Boys Sandwich<span class="price">10$</span></strong><br>
       <p class="description">Fried shrimps. Lettuce, Tomato, and shrimpo Po' Boys Sauce.</p>
+    
     </div>
 
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Firecracker Sandwich 🌶️</div>
-        <div class="price">12$</div>
-      </div>
+      <strong>Firecracker Sandwich 🌶️<span class="price">12$</span></strong><br>
       <p class="description">Grilled Shrimps, Avocado, Tomato, and Crisp Heat sauce.</p>
     </div>
-    
     <div class="signature-heading-group">
       <img src="fries.png" class="point" style="width: auto; height: 60px;">
       <h2>FRIES</h2>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Fries</div>
-        <div class="price">5$</div>
-      </div>
+      <strong>Fries<span class="price">5$</span></strong>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Loaded Fries</div>
-        <div class="price">9$</div>
-      </div>
+      <strong>Loaded Fries<span class="price">9$</span></strong>
       <p class="description">Fries topped with fried Shrimps, Shrimpo Sauce, Sweet Chili Sauce, and Shrimp Po' Boys sauce or tartar Sauce.</p>
       <p class="sectionp" style="font-size: 25px;">*Add Cheese  2$</p>
     </div>
-    
     <div class="signature-heading-group">
       <img src="pastabowl.png" class="point">
       <h2>SIGNATURE BOWLS</h2>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Linguine Shrimp Pasta</div>
-        <div class="price">14$</div>
-      </div>
+      <strong>Linguine Shrimp Pasta<span class="price">14$</span></strong>
       <p class="description">Linguini Pasta, Grilled Shrimps, White Sauce with Tomato.</p>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Cashew Shrimp</div>
-        <div class="price">10$</div>
-      </div>
+      <strong>Cashew Shrimp<span class="price">10$</span></strong>
       <p class="description"> Grilled  Shrimped, Special Sauce, Bell Pepper, Onions and Cashew with a side of Butter Rice.</p>
     </div>
 
@@ -289,34 +218,19 @@
       <h2>DIPPING SAUCES</h2>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Shrimpo Sauce</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Shrimpo Sauce<span class="price">0.56$</span></strong>
     </div>
      <div class="item">
-      <div class="item-header">
-        <div class="item-title">Angry Shrimpo Sauce</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Angry Shrimpo Sauce<span class="price">0.56$</span></strong>
     </div>
      <div class="item">
-      <div class="item-header">
-        <div class="item-title">Shrimp Po' Boys Sauce</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Shrimp Po' Boys Sauce<span class="price">0.56$</span></strong>
     </div>
      <div class="item">
-      <div class="item-header">
-        <div class="item-title">Tartar Sauce</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Tartar Sauce<span class="price">0.56$</span></strong>
     </div>
      <div class="item">
-      <div class="item-header">
-        <div class="item-title">Sweet Chili Sauce</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Sweet Chili Sauce<span class="price">0.56$</span></strong>
     </div>
      
 
@@ -325,16 +239,10 @@
        <h2>DRINKS</h2>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Water</div>
-        <div class="price">0.56$</div>
-      </div>
+      <strong>Water<span class="price">0.56$</span></strong>
     </div>
     <div class="item">
-      <div class="item-header">
-        <div class="item-title">Soft Drink</div>
-        <div class="price">1.12$</div>
-      </div>
+      <strong>Soft Drink<span class="price">1.12$</span></strong>
     </div>
     <br>
     <br>
